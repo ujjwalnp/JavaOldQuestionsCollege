@@ -1,4 +1,16 @@
-import java.sql.*;
+/*
+A database db_std contains a table tbl_std having field roll, name, faculty and mark. Write a program that does achieve the following:
+i. Print the total number of stundents,
+ii. Find the average mark.
+ */
+
+package JDBCDriver;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
 public class Fall2022 {
     public static void main(String args[]) {
         String url = "jdbc:mysql://localhost:3306/db_std";
